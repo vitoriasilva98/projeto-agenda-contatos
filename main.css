@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+}
+
+body {
+    background-color: #bdbdc3;
+    margin-top: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+header img {
+    height: 36px;
+    margin-right: 8px;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 8px;
+    border: none;
+    border-bottom: 2px solid #018790;
+    text-align: center;
+}
+
+input, button {
+    width: 300px;
+    height: 30px;
+}
+
+button {
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #018790;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+button::after {
+    background-color: #2b2726;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 32px;
+}
+
+table th {
+    border-bottom: 2px solid #2b2726;
+    font-weight: 500;
+    padding: 16px;
+}
+
+table td {
+    padding: 8px 0;
+    font-size: 18px;
+    border-bottom: 1.5px solid rgba(10, 81, 109, 0.2);
+}
+
+table tbody img,
+table tfoot img {
+    height: 36px;
+    vertical-align: middle;
+}
+
+
+form span {
+    font-size: 12px;
+    margin-bottom: 8px;
+    padding: 5px 0;
+    width: 300px;
+    text-align: center;
+    font-weight: 500;
+    display: none;
+}
+
+.alerta {
+    background-color: rgb(228, 198, 137);
+    border-bottom: 2px solid rgb(224, 164, 45);
+
+    button {
+       cursor:not-allowed;
+    }
+}
+
+.erro {
+    background-color: rgb(228, 139, 137);
+    border-bottom: 2px solid rgb(224, 51, 45);
+}

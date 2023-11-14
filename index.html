@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./imgs/agenda.png" alt="Agenda">
+            <h1>Agenda de contatos</h1>
+        </header>
+        <form id="form-contato">
+            <label for="form-nome">Nome</label>
+            <input type="text" id="form-nome" required minlength="3" maxlength="20" placeholder="ex: Maria Lúcia">
+            <span id="span-nome" class="alerta"></span>
+            <label for="form-numero">Número</label>
+            <input type="number" id="form-numero" required minlength="10" maxlength="11" placeholder="DDD+Número (ex: 11900001234)">
+            <span id="span-numero" class="erro"></span>
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <th>Nome do Contato</th>
+                <th>Número</th>
+                <th>Tipo</th>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total de contatos</td>
+                    <td id="total-contatos">0</td>
+                    <td><img src="./imgs/agenda.png" alt="Agenda"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
