@@ -108,7 +108,7 @@ function formatacaoDeNumero() {
     if (numero.length == 10) {
         numeroFormatado += `(${numero.slice(0, 2)}) ${numero.slice(2, 5)}-${numero.slice(5, 10)}`;
     } else {
-        numeroFormatado += `(${numero.slice(0, 2)})  ${numero.slice(2, 7)}-${numero.slice(7, 11)}`;
+        numeroFormatado += `(${numero.slice(0, 2)})  ${numero.slice(2, 8)}-${numero.slice(8, 11)}`;
     }
 
     return numeroFormatado;
